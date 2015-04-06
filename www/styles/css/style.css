@@ -697,3 +697,39 @@ input[type=password]:focus{
 .contact .text{
   margin-left: 10px;
 }
+
+
+/* ================================================= */
+/* 	 facebook flow window                            */
+/* ================================================= */
+
+.fb-left-edge { 
+  width: 300px; /*width outside of screen*/
+  position: fixed;
+  top: 30%;
+  z-index: 99999;
+  background: #fff;
+  left: -300px; /*opaque of width*/
+ /* -webkit-transition: left ease .5s;       used jquery, cause not work in IE
+  -moz-transition: left ease .5s;
+  -o-transition: left ease .5s;
+  transition: left ease .5s;*/
+}
+
+.fb-left-edge .fb-left-edge-link {
+  position: absolute;
+  top: 0;
+  left: 300px; /*width of fb-left-edge*/
+  width: 40px;
+  height: 270px;
+  display: block;
+	background: url(../images/fb_left_edge.png) no-repeat;
+  /*-webkit-transition: right ease .5s;
+  -moz-transition: right ease .5s;
+  -o-transition: right ease .5s;
+  transition: right ease .5s;*/
+}
+
+.fb-left-edge .fb-like-box-wrapper { margin: 0;}
+
+.fb-left-edge:hover { left: 0; }

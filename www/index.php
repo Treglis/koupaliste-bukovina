@@ -20,9 +20,10 @@ $isIe=!(isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'
 <!-- Start menu css and js files here -->
 <link rel="stylesheet" type="text/css" href="styles/css/superfish.css" media="screen" />
 
-<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="js/hoverIntent.js"></script>
-<script type="text/javascript" src="js/superfish.js"></script>
+<!--<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>-->
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/superfish-1.7.5/dist/js/hoverIntent.js"></script>
+<script type="text/javascript" src="js/superfish-1.7.5/dist/js/superfish.min.js"></script>
 <script type="text/javascript">jQuery(function(){ jQuery('ul.sf-menu').superfish(); });</script>
 <!-- End menu css and js files here -->
 
@@ -46,6 +47,9 @@ $isIe=!(isset($_SERVER['HTTP_USER_AGENT']) && (strpos($_SERVER['HTTP_USER_AGENT'
 
 </head>
 <body>
+
+  <?php include('system/fb_left_edge.php');?>
+
   <div id="top"></div>
 <?php 
   if (!$page) {
